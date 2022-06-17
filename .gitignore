@@ -129,3 +129,6 @@ dmypy.json
 .pyre/
 
 
+# project files/folders
+## env folder
+envdrf/
