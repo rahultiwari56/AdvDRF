@@ -131,4 +131,5 @@ dmypy.json
 
 # project files/folders
 ## env folder
-envdrf/
+appenv/
+Note
