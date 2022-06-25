@@ -129,6 +129,9 @@ dmypy.json
 .pyre/
 
 
+# django
+*migrations/
+
 # project files/folders
 ## env folder
 appenv/
