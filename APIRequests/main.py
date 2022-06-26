@@ -17,7 +17,20 @@ def get_all_student():
     print(data)
     
 
-# create
+# get
+def get_data(id = None):
+    data = {}
+    if id is not None:
+        data = {'id': id}
+
+    json_data = json.dumps(data)
+    api_url = f'{URL}getstudata/'
+    resp = requests.get(url = api_url, data=json_data)
+    data = resp.json()
+    print(data)
+
+
+# post
 def add_student(name, roll, city):
 
     data = {
@@ -41,4 +54,10 @@ if __name__=='__main__':
 
     ## post data 
     # add_student('Anuj', 104, 'Pune')
+
+    ## get data
+    # get_data(4)
+    # get_data()
+
+    pass
 
